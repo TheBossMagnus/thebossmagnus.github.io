@@ -46,7 +46,7 @@ If you encounter a bug or wish to suggest a mod, please open an issue on the [Gi
 
 > 🔢How does versioning work for Quilt Optimized?
 
-Quilt Optimized follows the [Semantic Versioning 2.0.0](https://semver.org/) scheme, which uses the version number format of MAJOR.MINOR.PATCH. Each part of the version number has a specific meaning: 
-- A MAJOR version increment indicates that significant changes have been made to the pack, such as the addition of support for a new major Minecraft update or the implementation of extensive modifications. 
-- A MINOR version increment indicates that smaller changes have been made to the pack, such as the addition or removal of a mod, or the inclusion of support for a new minor Minecraft update. 
+Quilt Optimized follows the [Semantic Versioning 2.0.0](https://semver.org/) scheme, which uses the version number format of MAJOR.MINOR.PATCH. Each part of the version number has a specific meaning:
+- A MAJOR version increment indicates that significant changes have been made to the pack, such as the addition of support for a new major Minecraft update or the implementation of extensive modifications.
+- A MINOR version increment indicates that smaller changes have been made to the pack, such as the addition or removal of a mod, or the inclusion of support for a new minor Minecraft update.
 - A PATCH version increment indicates that minor changes have been made to the pack, such as updates to mods or changes to configuration files.
