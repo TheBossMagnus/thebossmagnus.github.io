@@ -1,6 +1,6 @@
 
 +++
-title = "List of My Projects Sorted by Popularity"
+title = "List of My Projects"
 author = "TheBossMagnus"
 description = "List of My Projects"
 +++
