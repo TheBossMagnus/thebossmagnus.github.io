@@ -1,4 +1,4 @@
-I'm TheBossMagnus, and this website is all about me and my project! Maybe I'll even write a few blog posts...
+I'm TheBossMagnus, and this website is all about me and my [projects](https://thebossmagnus.github.io/projects)!
 
 You can find me on:
 

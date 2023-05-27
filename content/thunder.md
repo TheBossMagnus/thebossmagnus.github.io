@@ -5,6 +5,8 @@ description = "AKA Quilt Optimized. A Minecraft modpack that significantly impro
 color = "pink"
 +++
 {{< image src="/img/Thunder logo nobackground.png" alt="Logo" position="center">}}
+
+# >>[Download it from Modrinth!](https://modrinth.com/modpack/quilt-optimized)<<
 ## 📈Benchmarks
 
 | Benchmark                                                                  | [Quilt Optimized](https://modrinth.com/modpack/quilt-optimized) | [Fabulously Optimized](https://modrinth.com/modpack/fabulously-optimized) | [Simply Optimized](https://modrinth.com/modpack/sop) | Minecraft Vanilla |
