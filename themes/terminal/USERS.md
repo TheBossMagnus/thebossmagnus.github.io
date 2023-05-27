@@ -65,7 +65,6 @@
 - https://www.grumpymetalguy.com **GrumpyMetalGuy** (General Grumper and Developer)
 - https://blog.jontes.page **Jonte** (general tech geek)
 - https://nazdarthegame.com/ **Michal Skoula** (Software Developer)
-- https://1mup.myorange.house **Antonio Garosi** (Street art gallery)
 
 <!--
  TEMPLATE:
