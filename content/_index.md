@@ -10,5 +10,5 @@ You can find me on:
 
 
 ---
-Here, you'll find updates on my projects and perhaps even a few random blog posts.
+Here you'll find updates on my projects and perhaps even a few random blog posts.
 
