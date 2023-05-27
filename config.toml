@@ -5,7 +5,7 @@ theme = "terminal"
 paginate = 4
 
 [params]
-    themeColor = "orange"
+    themeColor = "red"
     centerTheme = true
 
 [params.twitter]
@@ -46,3 +46,7 @@ paginate = 4
         identifier = "projects"
         name = "Projects"
         url = "/projects"
+      [[languages.en.menu.main]]
+        identifier = "thunder"
+        name = "Thunder"
+        url = "/thunder"
