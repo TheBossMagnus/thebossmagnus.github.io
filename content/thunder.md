@@ -2,7 +2,6 @@
 title = "Thunder"
 author = "TheBossMagnus"
 description = "AKA Quilt Optimized. A Minecraft modpack that significantly improves your FPS up to 4 times and your load times. Does not include any quality-of-life mod."
-color = "pink"
 +++
 {{< image src="/img/Thunder logo nobackground.png" alt="Logo" position="center">}}
 
