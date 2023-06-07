@@ -3,6 +3,7 @@ title = "Thunder 1.0.0"
 author = "TheBossMagnus"
 description = "Experience Thunder 1.0.0, an upgraded version of Quilt Optimized with added support for Fabric and Minecraft versions 1.16.5, 1.17.1, 1.20, and more exciting features"
 +++
+
 **A full Thunder reinstall is reccomanded**
 ## Rebranding and Name Change
 Quilt Optimized has been rebranded as Thunder to align with the project's new direction. The updated logo reflects Thunder's transformation:
