@@ -1,0 +1,57 @@
+thebossmagnus
+==================================================================
+https://keybase.io/thebossmagnus
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://thebossmagnus.github.io
+  * I am thebossmagnus (https://keybase.io/thebossmagnus) on keybase.
+  * I have a public key ASBV29Kkmjs2mxv2bWCtrVGO9RPzakJyGlHa52o6bQgD9wo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012055dbd2a49a3b369b1bf66d60adad518ef513f36a42721a51dae76a3a6d0803f70a",
+      "host": "keybase.io",
+      "kid": "012055dbd2a49a3b369b1bf66d60adad518ef513f36a42721a51dae76a3a6d0803f70a",
+      "uid": "1e8434eaea7b4451d911b2023d49f519",
+      "username": "thebossmagnus"
+    },
+    "merkle_root": {
+      "ctime": 1688212899,
+      "hash": "a621ae151822a8910cbe08c3ec2c06069a15f316f78228ed16e98d63e1858c0c6eb41823a4e6d665422ef769cfca9ae10a7a797d788cbdfa56152f05c88e046f",
+      "hash_meta": "c9132cf9b139b4478dcb4a20a7ad0fc629c8e440bd6fc2294c746c241d6a1f27",
+      "seqno": 24630564
+    },
+    "service": {
+      "entropy": "tFqyygIK2ic6uYE7XiD6KnJ7",
+      "hostname": "thebossmagnus.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.0.1"
+  },
+  "ctime": 1688212923,
+  "expire_in": 504576000,
+  "prev": "08bdbc157a3a12187d65c3e733da5f4afdb2be7cca81722b58d146e9e963523b",
+  "seqno": 8,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgVdvSpJo7Npsb9m1gra1RjvUT82pCchpR2udqOm0IA/cKp3BheWxvYWTESpcCCMQgCL28FXo6Ehh9ZcPnM9pfSv2yvnzKgXIrWNFG6eljUjvEIGTZ5QdUVSMsIIncNElgLfX8MgcXssfi/kg0GrhevjPdAgHCo3NpZ8RA2pICacK6ddSUwCzWxKLhNeBZzirxg5kyMrmleCIf9CMW2/IR5pUAXi7Kch4V/7X0QGypix50PmMvpk4HWu6fC6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIEdlSS64vDSoUchnziT/PM1j2l/jKcn4H1blOER7R4Jso3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/thebossmagnus
+
+==================================================================
