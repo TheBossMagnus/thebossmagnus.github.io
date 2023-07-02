@@ -9,7 +9,7 @@ You can find me on:
 * Discord server (COMING SOON)\
 &nbsp;
 
-This is [my GPG key](thebossmagnus.github.io/TheBossMagnus_public.asc). All of my GitHub commits should be signed with this key.
+This is [my GPG key](https://thebossmagnus.github.io/TheBossMagnus_public.asc). All of my GitHub commits should be signed with this key.
 
 ---
 Here you'll find updates on my projects and perhaps even a few random blog posts.
