@@ -2,13 +2,14 @@
 title = "Thunder 1.0.0"
 author = "TheBossMagnus"
 description = "Experience Thunder 1.0.0, an upgraded version of Quilt Optimized with added support for Fabric and Minecraft versions 1.16.5, 1.17.1, 1.20, and more exciting features"
+date = "2023-07-11"
 +++
 
 **A full Thunder reinstall is recomanded**
 ## Rebranding and Name Change
 Quilt Optimized has been rebranded as Thunder to align with the project's new direction. The updated logo reflects Thunder's transformation:
 
-|{{< figure src="/img/thunder-1.0.0/old-logo.png" alt="Hello Friend" position="center" caption="Old logo" captionPosition="center" >}} | {{< figure src="/img/thunder-1.0.0/new-logo.png" alt="Hello Friend" position="center" caption="New logo" captionPosition="center" >}} |
+|{{< figure src="/images/thunder-1.0.0/old-logo.png" alt="Hello Friend" position="center" caption="Old logo" captionPosition="center" >}} | {{< figure src="/images/thunder-1.0.0/new-logo.png" alt="Hello Friend" position="center" caption="New logo" captionPosition="center" >}} |
 -|-
 
 The [Modrinth page](https://modrinth.com/modpack/Thunder) has also been completely redesigned to match the new Thunder branding.
