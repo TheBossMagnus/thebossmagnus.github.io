@@ -12,6 +12,6 @@ description = "List of My Projects"
 
 * [thebossmagnus.github.io](https://thebossmagnus.github.io) (this website!). Nothing too fancy, but nice to have. [Repository](https://github.com/TheBossMagnus/thebossmagnus.github.io) (06/2023 - Present)
 
-* [Moderator for Fabulously Optimized](https://fabulously-optimized.github.io/discord) (26/11/2023 - Present)
+* [Moderator for Fabulously Optimized](https://download.fo/discord) (26/11/2023 - Present)
 
 * More coming soon, or so i hope...
