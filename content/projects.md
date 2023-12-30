@@ -14,4 +14,6 @@ description = "List of My Projects"
 
 * [Moderator for Fabulously Optimized](https://download.fo/discord) (26/11/2023 - Present)
 
-* More coming soon, or so i hope...
+* [Storm](https://github.com/TheBossMagnus/Storm) Experimental Minecraft modpack with outstanding performance designed to replace Optifine. Based on Thunder (12/2023-present)
+
+* [ModpackChangelogger](https://github.com/TheBossMagnus/ModpackChangelogger) Python tool to generate a changelog between two Minecraft modpacks (12/2023-present)
