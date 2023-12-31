@@ -9,7 +9,7 @@ date = "2023-07-11"
 ## Rebranding and Name Change
 Quilt Optimized has been rebranded as Thunder to align with the project's new direction. The updated logo reflects Thunder's transformation:
 
-|{{< figure src="/images/thunder-1.0.0/old-logo.png" alt="Hello Friend" position="center" caption="Old logo" captionPosition="center" >}} | {{< figure src="/images/thunder-1.0.0/new-logo.png" alt="Hello Friend" position="center" caption="New logo" captionPosition="center" >}} |
+|{{< figure src="/images/thunder-1.0.0/old-logo.png" alt="Old logo" position="center" caption="Old logo" captionPosition="center" >}} | {{< figure src="/images/thunder-1.0.0/new-logo.png" alt="Nwe logo" position="center" caption="New logo" captionPosition="center" >}} |
 -|-
 
 The [Modrinth page](https://modrinth.com/modpack/Thunder) has also been completely redesigned to match the new Thunder branding.

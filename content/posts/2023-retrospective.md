@@ -6,7 +6,7 @@ date = "2023-12-31"
 +++
 
 Greetings, everyone! It's been a bit since my last blog post, but I'm back with some exciting updates. First and foremost, a heartfelt thank you to each one of you who has supported me on this journey. When I started sharing my mods on Modrinth, I never imagined hitting nearly 17k downloads in just one year!
-![Modinth dashboard showing 16.7k downloads and 35 followers](images/2023-retrospective/image.png)
+{{< figure src="/images/2023-retrospective/image.png" alt="Modinth dashboard showing 16.7k downloads and 35 followers" position="center" caption="Modinth dashboard showing 16.7k downloads and 35 followers" captionPosition="center" >}}
 
 ## What's New
 ### Thunder
@@ -14,7 +14,7 @@ I'm thrilled to announce the release of Thunder version 1.0.0! With this update,
 
 ## Storm: A New Pack
 Keeping my promise, I've introduced a new modpack called Storm, fulfilling the desire for a "plus" version with Optifine features. It's been in open-beta on Modrinth for a few days, supporting versions 1.20.1, 1.20.2, and 1.20.4 on Fabric. Maintaining the same optimization layer as Thunder, Storm adds the majority of Optifine features, including connected glass and dynamic lights. You can find it [here](https://modrinth.com/modpack/storm).
-![The download page for Storm](images/2023-retrospective/image2.png)
+{{< figure src="/images/2023-retrospective/image2.png" alt="The download page for Storm" position="center" caption="The download page for Storm" captionPosition="center" >}}
 
 ## Other Quick Updates
 * I've recently released a tool for automatically generating changelogs for Thunder and Storm. For those interested, it's available on [GitHub](https://github.com/TheBossMagnus/ModpackChangelogger). Developing it has been a great opportunity for me to learn Python, and I've had a lot of fun with it.
