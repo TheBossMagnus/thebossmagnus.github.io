@@ -5,8 +5,14 @@ description = "Retrospective on the 2023, featuring announcements, updates and s
 date = "2023-12-31"
 +++
 
-Greetings, everyone! It's been a bit since my last blog post, but I'm back with some exciting updates. First and foremost, a heartfelt thank you to each one of you who has supported me on this journey. When I started sharing my mods on Modrinth, I never imagined hitting nearly 17k downloads in just one year!
-{{< figure src="/images/2023-retrospective/image.png" alt="Modinth dashboard showing 16.7k downloads and 35 followers" position="center" caption="Modinth dashboard showing 16.7k downloads and 35 followers" captionPosition="center" >}}
+<div style="display: flex; justify-content: space-between;">
+    <div style="width: 50%; padding-right: 10px;">
+        Greetings, everyone! It's been a bit since my last blog post, but I'm back with some exciting updates. First and foremost, a heartfelt thank you to each one of you who has supported me on this journey. When I started sharing my mods on Modrinth, I never imagined hitting nearly 17k downloads in just one year!
+    </div>
+    <div style="width: 33%;">
+        {{< figure src="/images/2023-retrospective/image.png"       alt="Modinth dashboard showing 16.7k downloads and 35       followers" position="center" caption="Modinth     dashboard showing 16.7k downloads and 35 followers"       captionPosition="center" >}}
+    </div>
+</div>
 
 ## What's New
 ### Thunder
