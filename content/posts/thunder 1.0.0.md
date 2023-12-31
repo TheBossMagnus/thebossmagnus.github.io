@@ -28,7 +28,7 @@ Several other enhancements and updates have been made to Thunder:
 * Removed MoreCulling Extra, Skip transition, Exordium and Memory Leak Fix
 * The automatic release pipeline has been completely rewritten, ensuring that every version now features a comprehensive changelog.
 * Upcoming snapshots will be supported, with efforts to stay up-to-date. Please note that these releases are considered alpha and incomplete.
-* A new shiny [page](https://thebossmagnus.github.io/thunder) on my new website.
+* <s> A new shiny [page](https://thebossmagnus.github.io/thunder) on my new website.</s>
 
 ## Thank You!
 A huge thank you to everyone for the support, resulting in nearly 1000 downloads of Thunder!
