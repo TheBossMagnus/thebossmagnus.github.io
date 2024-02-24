@@ -37,22 +37,22 @@ style = "github-dark"
 # Social links
 [[params.social]]
   name = "Github"
-  icon = "fa fa-github fa-3x"
+  icon = "fa-brands fa-github fa-3x"
   weight = 1
   url = "https://github.com/TheBossMagnus/"
 [[params.social]]
   name = "Modrinth"
-  icon = "fa fa-download fa-3x"
+  icon = "fa-solid fa-download fa-3x"
   weight = 2
   url = "https://modrinth.com/user/TheBossMagnus"
 [[params.social]]
   name = "Discord"
-  icon = "fa fa-discord-alt fa-3x"
+  icon = "fa-brands fa-discord fa-3x"
   weight = 3
   url = "https://discord.com/users/731196876078186576"
 [[params.social]]
   name = "E-mail"
-  icon = "fa fa-at fa-3x"
+  icon = "fa-solid fa-at fa-3x"
   weight = 4
   url = "mailto:TheBossMagnus@proton.me"
 
