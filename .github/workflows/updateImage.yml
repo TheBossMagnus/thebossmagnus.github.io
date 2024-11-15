@@ -28,7 +28,7 @@ jobs:
         run: mkdir -p assets
 
       - name: Capture table
-        run: node static/thunder/imagecapture.js
+        run: node static/thunder/imageCapture.js
 
       - name: Commit and push if changes
         env:
