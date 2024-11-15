@@ -28,8 +28,8 @@ jobs:
 
       - name: Commit and push if changes
         run: |
-          git config --global user.name 'GitHub Action'
-          git config --global user.email 'action@github.com'
+          git config --global user.name 'TheBossMagnus'
+          git config --global user.email 'thebossmagnus@proton.me'
           git add assets/table.png
-          git commit -m "Update table image" || exit 0
+          git commit -m "[AUTOMATED] Update table image" || exit 0
           git push
