@@ -1,0 +1,56 @@
+/* Bad attempt to clone the modrinth table style */
+.table-style {
+    table-layout: auto;
+    
+    border: .1rem solid #33363d;
+    border-collapse: separate;
+    border-radius: .5rem;
+    border-spacing: 0;
+    display: block;
+    line-height: 1.5;
+    max-width: 100%;
+    overflow: auto;
+    width: max-content;
+
+}
+
+body{
+    color: initial;
+    background-color: #26292f;
+    font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Roboto,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.table-style th {
+    color: #b0bac5;
+    text-align: center;
+    font-weight: 600;
+    padding: .4rem .85rem;
+    border-bottom: .1rem solid #33363d;
+    border-right: .1rem solid #33363d;
+    box-sizing: border-box;
+    
+}
+
+.table-style td {
+    padding: .4rem .85rem;
+    border-bottom: .1rem solid #33363d;
+    border-right: .1rem solid #33363d;
+    box-sizing: border-box;
+    color: #a7b1bb;
+}
+
+.table-style tr:nth-child(even) {
+    background-color: #000000;
+}
+
+.table-style th:last-child,
+.table-style td:last-child {
+    border-right: none;
+}
+
+
+.table-style tr:last-child td {
+    border-bottom: none;
+}
