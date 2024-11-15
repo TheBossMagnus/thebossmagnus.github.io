@@ -1,0 +1,35 @@
+name: Update Table Image
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Daily at midnight
+  workflow_dispatch:
+
+jobs:
+  update-image:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install puppeteer
+
+      - name: Create assets directory
+        run: mkdir -p assets
+
+      - name: Capture table
+        run: node .github/scripts/imageCapture.js
+
+      - name: Commit and push if changes
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add assets/table.png
+          git commit -m "Update table image" || exit 0
+          git push
