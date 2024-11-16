@@ -25,9 +25,18 @@ async function captureTable() {
     
     // Capture table
     const element = await page.$('#table-container');
+    const boundingBox = await element.boundingBox();
+    const newWidth = boundingBox.width / 3;
+
     await element.screenshot({
         path: path.join(__dirname, '../../assets/table.png'),
-        omitBackground: false
+        omitBackground: false,
+        clip: {
+            x: boundingBox.x,
+            y: boundingBox.y,
+            width: newWidth,
+            height: boundingBox.height
+        }
     });
 
     await browser.close();
