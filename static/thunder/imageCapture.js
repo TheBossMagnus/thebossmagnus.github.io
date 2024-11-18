@@ -10,7 +10,7 @@ async function captureTable() {
     const page = await browser.newPage();
     
     // Set viewport size
-    await page.setViewport({ width: 600, height: 450 });
+    await page.setViewport({ width: 650, height: 450 });
     
     // Navigate to page
     await page.goto('https://thebossmagnus.github.io/thunder/supported-versions.html?embed');
