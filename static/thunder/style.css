@@ -22,6 +22,32 @@ body{
     font-weight: 400;
 }
 
+body.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+button {
+    background-color: #1bd96a;
+    color: #000000;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 1rem;
+    font-weight: 600;
+    height: 3rem;
+    transition: scale .125s ease-in-out, background-color .25s ease-in-out,color .25s ease-in-out;
+}
+
+button:hover {
+    background-color: #22ff84;
+}
+
 .table-style th {
     color: #b0bac5;
     text-align: center;
@@ -39,6 +65,19 @@ body{
     border-right: .1rem solid #33363d;
     box-sizing: border-box;
     color: #a7b1bb;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+
+/* Style the links inside the table cells */
+.table-style td a {
+    color: #f8feff;
+    text-decoration: none;
+    font-weight: 550;
+}
+
+.table-style td a:hover {
+    text-decoration: underline;
 }
 
 .table-style tr:nth-child(even) {
@@ -53,4 +92,31 @@ body{
 
 .table-style tr:last-child td {
     border-bottom: none;
+}
+
+.explanation {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    color: #b0bac5;
+    line-height: 1.6;
+    display: block; /* Ensures it's visible by default */
+}
+
+.explanation h3 {
+    color: #f8feff;
+    margin-bottom: 1rem;
+}
+
+.explanation ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.explanation li {
+    margin: 0.5rem 0;
+}
+
+.explanation p {
+    margin: 1rem 0;
 }

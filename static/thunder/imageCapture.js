@@ -13,7 +13,7 @@ async function captureTable() {
     await page.setViewport({ width: 600, height: 450 });
     
     // Navigate to page
-    await page.goto('https://thebossmagnus.github.io/thunder/supported_version.html');
+    await page.goto('https://thebossmagnus.github.io/thunder/supported-versions.html?embed');
     
     // Wait for table to load
     await page.waitForSelector('.table-style');

@@ -3,10 +3,22 @@ const STATUS_CODES = {
     "rec": "✅ Recommended", 
     "sup": "🟢 Actively supported",
     "lts": "⏳ Long-term support",
-    "out": "🔴 Out of support",
-    "na": "N/A"
+    "out": "⚠️ Out of support",
+    "na":  "🔴 Not Available"
 };
 
+const urlParams = new URLSearchParams(window.location.search);
+const isEmbed = urlParams.has('embed');
+let currentMode = isEmbed ? 'reduced' : 'detailed';
+
+function filterDataForReducedMode(data) {
+    return data.filter(row => {
+        return !Object.values(row).every((value, index) => {
+            if (index === 0) return true;
+            return value === STATUS_CODES.na || value === STATUS_CODES.out;
+        });
+    });
+}
 
 function processStatusCodes(data) {
     return data.map(row => {
@@ -39,9 +51,20 @@ function createTableBody(data) {
     
     data.forEach(rowData => {
         const row = tbody.insertRow();
-        Object.values(rowData).forEach(cellData => {
+        Object.entries(rowData).forEach(([key, cellData]) => {
             const cell = row.insertCell();
-            cell.textContent = cellData;
+            if (!isEmbed && cellData !== STATUS_CODES.exp && cellData !== STATUS_CODES.na && key !== 'Minecraft Version') {
+                const minecraftVersion = rowData['Minecraft Version'];
+                const url = `https://modrinth.com/modpack/thunder/versions?g=${encodeURIComponent(minecraftVersion)}&l=${encodeURIComponent(key).toLowerCase()}`;
+                const link = document.createElement('a');
+                link.href = url;
+                link.textContent = cellData;
+                cell.appendChild(link);
+                // Add 'link-cell' class to cells with links
+                cell.classList.add('link-cell');
+            } else {
+                cell.textContent = cellData;
+            }
         });
     });
     
@@ -59,15 +82,35 @@ function createTable(data) {
     return table;
 }
 
-
 async function initializeVersionTable(container) {
     try {
         const response = await fetch('https://raw.githubusercontent.com/TheBossMagnus/Thunder/refs/heads/main/versions.json');
         const data = await response.json();
         const processedData = processStatusCodes(data);
         
-        const table = createTable(processedData);
+        const fetchedData = processedData;
+        let filteredData = currentMode === 'reduced' ? filterDataForReducedMode(fetchedData) : fetchedData;
+
+        const table = createTable(filteredData);
         container.appendChild(table);
+
+        if (!isEmbed) {
+            document.body.classList.add('centered');
+            const switchModeButton = document.createElement('button');
+            switchModeButton.textContent = 'Hide unsupported versions';
+            switchModeButton.addEventListener('click', () => {
+                currentMode = currentMode === 'detailed' ? 'reduced' : 'detailed';
+                switchModeButton.textContent = currentMode === 'detailed' ? 'Hide unsupported versions' : 'Show unsupported versions';
+                container.innerHTML = '';
+                const newData = currentMode === 'reduced' ? filterDataForReducedMode(fetchedData) : fetchedData;
+                const newTable = createTable(newData);
+                container.appendChild(newTable);
+            });
+            container.parentNode.insertBefore(switchModeButton, container.nextSibling);
+        } else {
+            // Hide explanation when embedded
+            document.getElementById('version-explanation').style.display = 'none';
+        }
     } catch (error) {
         console.error('Error fetching data:', error);
         const errorTable = createTable([{
