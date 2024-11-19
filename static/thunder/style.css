@@ -120,3 +120,22 @@ button:hover {
 .explanation p {
     margin: 1rem 0;
 }
+
+@media screen and (max-width: 768px) {
+    #table-container {
+        max-width: 100%;
+        overflow-x: auto;
+        padding: 10px;
+    }
+    
+    table {
+        font-size: 14px;
+        width: 100%;
+        min-width: 500px; /* Ensures table doesn't get too small */
+    }
+    
+    .explanation {
+        padding: 15px;
+        margin: 10px;
+    }
+}
