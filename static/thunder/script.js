@@ -9,7 +9,7 @@ const STATUS_CODES = {
 
 const urlParams = new URLSearchParams(window.location.search);
 const isEmbed = urlParams.has('embed');
-let currentMode = isEmbed ? 'reduced' : 'detailed';
+let showAllVersions = false;
 
 function filterDataForReducedMode(data) {
     return data.filter(row => {
@@ -89,7 +89,7 @@ async function initializeVersionTable(container) {
         const processedData = processStatusCodes(data);
         
         const fetchedData = processedData;
-        let filteredData = currentMode === 'reduced' ? filterDataForReducedMode(fetchedData) : fetchedData;
+        let filteredData = showAllVersions ? fetchedData : filterDataForReducedMode(fetchedData);
 
         const table = createTable(filteredData);
         container.appendChild(table);
@@ -99,10 +99,10 @@ async function initializeVersionTable(container) {
             const switchModeButton = document.createElement('button');
             switchModeButton.textContent = 'Hide unsupported versions';
             switchModeButton.addEventListener('click', () => {
-                currentMode = currentMode === 'detailed' ? 'reduced' : 'detailed';
-                switchModeButton.textContent = currentMode === 'detailed' ? 'Hide unsupported versions' : 'Show unsupported versions';
+                showAllVersions = !showAllVersions;
+                switchModeButton.textContent = showAllVersions ? 'Hide unsupported versions' : 'Show unsupported versions';
                 container.innerHTML = '';
-                const newData = currentMode === 'reduced' ? filterDataForReducedMode(fetchedData) : fetchedData;
+                const newData = showAllVersions ? fetchedData : filterDataForReducedMode(fetchedData);
                 const newTable = createTable(newData);
                 container.appendChild(newTable);
             });
