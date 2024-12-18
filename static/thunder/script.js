@@ -95,6 +95,8 @@ async function initializeVersionTable(container) {
         container.appendChild(table);
 
         if (!isEmbed) {
+            // Show explanation when not embedded
+            document.getElementById('version-explanation').style.display = 'block';
             document.body.classList.add('centered');
             const switchModeButton = document.createElement('button');
             switchModeButton.textContent = 'Hide unsupported versions';

@@ -121,6 +121,10 @@ button:hover {
     margin: 1rem 0;
 }
 
+#version-explanation {
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
     #table-container {
         max-width: 100%;
