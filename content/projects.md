@@ -12,7 +12,8 @@ description = "List of My Projects"
 
 * [thebossmagnus.github.io](https://thebossmagnus.github.io) (this website!). Nothing too fancy, but nice to have. [Repository](https://github.com/TheBossMagnus/thebossmagnus.github.io) (06/2023 - Present)
 
-* [Moderator for Fabulously Optimized](https://download.fo) (26/11/2023 - Present)
+* [Moderator for Fabulously Optimized](https://download.fo) (11/2023 - Present)
+* [Moderator for Modrinth discord](https://discord.modrinth.com/) (3/2025 - Present)
 
 # Other things and deprecated
 
@@ -20,4 +21,4 @@ description = "List of My Projects"
 
 * [No Longer Suspicious!](https://modrinth.com/resourcepack/nolongersuspicious) is a Minecraft resource pack designed to help you locate suspicious sand and gravel introduced in the 1.20 update, making it easier for you to uncover hidden treasures. (03/2023)
 
-* [Storm](https://github.com/TheBossMagnus/Storm) Experimental Minecraft modpack with outstanding performance designed to replace Optifine. Based on Thunder (12/2023 - deprectaed)
+* [Storm](https://github.com/TheBossMagnus/Storm) An experimental Minecraft modpack with outstanding performance designed to replace Optifine. Based on Thunder. (12/2023 - deprecated)
