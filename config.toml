@@ -4,69 +4,70 @@ theme = "hugo-coder"
 languagecode = "en"
 defaultcontentlanguage = "en"
 
-paginate = 20
+[pagination]
+pagerSize = 20
 
 [markup.highlight]
 style = "github-dark"
 
 [params]
-  author = "TheBossMagnus"
-  info = "Kinda a dev"
-  description = "My Website"
-  avatarurl = "images/avatar.png"
+author = "TheBossMagnus"
+info = "Kinda a dev"
+description = "My Website"
+avatarurl = "images/avatar.png"
 
-  faviconSVG = "https://avatars.githubusercontent.com/u/92474350?v=4"
-  favicon_32 = "https://avatars.githubusercontent.com/u/92474350?v=4"
-  favicon_16 = "https://avatars.githubusercontent.com/u/92474350?v=4"
+faviconSVG = "https://avatars.githubusercontent.com/u/92474350?v=4"
+favicon_32 = "https://avatars.githubusercontent.com/u/92474350?v=4"
+favicon_16 = "https://avatars.githubusercontent.com/u/92474350?v=4"
 
-  since = 2023
+since = 2023
 
-  enableTwemoji = true
+enableTwemoji = true
 
-  colorScheme = "auto"
-  hidecolorschemetoggle = false
+colorScheme = "auto"
+hidecolorschemetoggle = false
 
-  # customCSS = ["css/custom.css"]
-  # customSCSS = ["scss/custom.scss"]
-  # customJS = ["js/custom.js"]
+# customCSS = ["css/custom.css"]
+# customSCSS = ["scss/custom.scss"]
+# customJS = ["js/custom.js"]
 
 [taxonomies]
-  tag = "tags"
-  author = "authors"
+tag = "tags"
+author = "authors"
 
 # Social links
 [[params.social]]
-  name = "Github"
-  icon = "fa-brands fa-github fa-3x"
-  weight = 1
-  url = "https://github.com/TheBossMagnus/"
+name = "Github"
+icon = "fa-brands fa-github fa-3x"
+weight = 1
+url = "https://github.com/TheBossMagnus/"
 [[params.social]]
-  name = "Modrinth"
-  icon = "fa-solid fa-download fa-3x"
-  weight = 2
-  url = "https://modrinth.com/user/TheBossMagnus"
+name = "Modrinth"
+icon = "fa-solid fa-download fa-3x"
+weight = 2
+url = "https://modrinth.com/user/TheBossMagnus"
 [[params.social]]
-  name = "Discord"
-  icon = "fa-brands fa-discord fa-3x"
-  weight = 3
-  url = "https://discord.com/users/731196876078186576"
+name = "Discord"
+icon = "fa-brands fa-discord fa-3x"
+weight = 3
+url = "https://discord.com/users/731196876078186576"
 [[params.social]]
-  name = "E-mail"
-  icon = "fa-solid fa-at fa-3x"
-  weight = 4
-  url = "mailto:TheBossMagnus@proton.me"
+name = "E-mail"
+icon = "fa-solid fa-at fa-3x"
+weight = 4
+url = "mailto:TheBossMagnus@proton.me"
 
 
 # Menu links
 [[menu.main]]
-  name = "Blog"
-  weight = 1
-  url  = "posts/"
+name = "Blog"
+weight = 1
+url = "posts/"
 [[menu.main]]
-  name = "Projects"
-  weight = 2
-  url = "projects/"
+name = "Projects"
+weight = 2
+url = "projects/"
 [[menu.main]]
-  name = "About"
-  weight = 3
-  url = "about/"
+name = "About"
+weight = 3
+url = "about/"
