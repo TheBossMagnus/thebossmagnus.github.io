@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thunder Modpack Versions</title>
     <link rel="stylesheet" href="style.css">
-    <meta name="description" content="Thunder Modpack Versions - View the support status of different Minecraft versions and loaders for the Thunder Modpack.">
+    <meta name="description"
+        content="Thunder Modpack Versions - View the support status of different Minecraft versions and loaders for the Thunder Modpack.">
 </head>
+
 <body>
     <div id="table-container"></div>
     <div class="explanation" id="version-explanation">
-        <p>Click on any supported version to go directly to its download page on Modrinth.</p>
-        <h3>What does each status mean?</h3>
+        <p>Click any supported version below to visit its download page on Modrinth.</p>
+        <h3>Status Legend</h3>
         <ul>
-            <li><strong>✅ Recommended:</strong> Most stable, performant, and up-to-date release.</li>
-            <li><strong>🟢 Actively supported:</strong> Up-to-date release with the newest mods.</li>
-            <li><strong>⏳ Long-term support:</strong> Releases for older Minecraft versions with fewer updates, less optimizations.</li>
-            <li><strong>🧪 Experimental:</strong> Unstable version, may have bugs.</li>
-            <li><strong>⚠️ Out of support:</strong> No longer supported or updated, but still available to download.</li>
-            <li><strong>🔴 Not Available:</strong> Not available for this loader/version combination.</li>
+            <li><strong>✅ Recommended:</strong> The most stable and performant release that guarantees the best expereience.</li>
+            <li><strong>🟢 Actively supported:</strong> Regularly updated with the latest mods and improvements.</li>
+            <li><strong>⏳ Legacy:</strong> Older releases that receive fewer updates and optimizations.</li>
+            <li><strong>🧪 Experimental:</strong> Unstable versions that may contain bugs.</li>
+            <li><strong>⚠️ Out of support:</strong> No longer updated, but still available for download.
+            </li>
+            <li><strong>🔴 Not Available:</strong> This loader/version combination is not offered.</li>
         </ul>
-        <h3>Versions become deprecated when one or more of the following happens:</h3>
+        <h3>When does a Minecraft version become deprecated?</h3>
         <ol>
-            <li>They have low downloads and user count, or their maintenance is not worth the effort.</li>
-            <li>They receive little to no mods updates and support.</li>
-            <li>They have some critical issue and Mojang has already released an hotfix update.</li>
+            <li>It has low downloads and a small user base, making maintenance not worth it.</li>
+            <li>It receives few or no mod updates.</li>
+            <li>It has critical issues that have been fixed in a newer Minecraft update.</li>
         </ol>
     </div>
 
     <script src="script.js"></script>
-    
+
 </body>
+
 </html>

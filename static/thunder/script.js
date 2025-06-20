@@ -2,7 +2,7 @@ const STATUS_CODES = {
     "exp": "🧪 Experimental",
     "rec": "✅ Recommended", 
     "sup": "🟢 Actively supported",
-    "lts": "⏳ Long-term support",
+    "leg": "⏳ Legacy",
     "out": "⚠️ Out of support",
     "na":  "🔴 Not Available"
 };
