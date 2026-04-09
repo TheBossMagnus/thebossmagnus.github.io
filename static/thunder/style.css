@@ -1,145 +1,156 @@
 /* Bad attempt to clone the modrinth table style */
 .table-style {
-    table-layout: auto;
-    
-    border: .1rem solid #33363d;
-    border-collapse: separate;
-    border-radius: .5rem;
-    border-spacing: 0;
-    display: block;
-    line-height: 1.5;
-    max-width: 100%;
-    overflow: auto;
-    width: max-content;
+  table-layout: auto;
 
+  border: 0.1rem solid #33363d;
+  border-collapse: separate;
+  border-radius: 0.5rem;
+  border-spacing: 0;
+  display: block;
+  line-height: 1.5;
+  max-width: 100%;
+  overflow: auto;
+  width: max-content;
 }
 
-body{
-    color: initial;
-    background-color: #26292f;
-    font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Roboto,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+body {
+  color: initial;
+  background-color: #26292f;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Oxygen,
+    Ubuntu,
+    Roboto,
+    Cantarell,
+    Fira Sans,
+    Droid Sans,
+    Helvetica Neue,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 body.centered {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
 }
 
 button {
-    background-color: #1bd96a;
-    color: #000000;
-    border: none;
-    padding: 0.5rem 1rem;
-    margin-top: 1rem;
-    margin-bottom: 0;
-    cursor: pointer;
-    font-size: 1rem;
-    border-radius: 1rem;
-    font-weight: 600;
-    height: 3rem;
-    transition: scale .125s ease-in-out, background-color .25s ease-in-out,color .25s ease-in-out;
+  background-color: #1bd96a;
+  color: #000000;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  height: 3rem;
+  transition:
+    scale 0.125s ease-in-out,
+    background-color 0.25s ease-in-out,
+    color 0.25s ease-in-out;
 }
 
 button:hover {
-    background-color: #22ff84;
+  background-color: #22ff84;
 }
 
 .table-style th {
-    color: #b0bac5;
-    text-align: center;
-    font-weight: 600;
-    padding: .4rem .85rem;
-    border-bottom: .1rem solid #33363d;
-    border-right: .1rem solid #33363d;
-    box-sizing: border-box;
-    
+  color: #b0bac5;
+  text-align: center;
+  font-weight: 600;
+  padding: 0.4rem 0.85rem;
+  border-bottom: 0.1rem solid #33363d;
+  border-right: 0.1rem solid #33363d;
+  box-sizing: border-box;
 }
 
 .table-style td {
-    padding: .4rem .85rem;
-    border-bottom: .1rem solid #33363d;
-    border-right: .1rem solid #33363d;
-    box-sizing: border-box;
-    color: #a7b1bb;
-    transition: box-shadow 0.3s ease-in-out;
+  padding: 0.4rem 0.85rem;
+  border-bottom: 0.1rem solid #33363d;
+  border-right: 0.1rem solid #33363d;
+  box-sizing: border-box;
+  color: #a7b1bb;
+  transition: box-shadow 0.3s ease-in-out;
 }
-
 
 /* Style the links inside the table cells */
 .table-style td a {
-    color: #f8feff;
-    text-decoration: none;
-    font-weight: 550;
+  color: #f8feff;
+  text-decoration: none;
+  font-weight: 550;
 }
 
 .table-style td a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .table-style tr:nth-child(even) {
-    background-color: #000000;
+  background-color: #000000;
 }
 
 .table-style th:last-child,
 .table-style td:last-child {
-    border-right: none;
+  border-right: none;
 }
 
-
 .table-style tr:last-child td {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .explanation {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 1rem;
-    color: #b0bac5;
-    line-height: 1.6;
-    display: block; /* Ensures it's visible by default */
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  color: #b0bac5;
+  line-height: 1.6;
+  display: block; /* Ensures it's visible by default */
 }
 
 .explanation h3 {
-    color: #f8feff;
-    margin-bottom: 1rem;
+  color: #f8feff;
+  margin-bottom: 1rem;
 }
 
 .explanation ul {
-    list-style-type: none;
-    padding-left: 0;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .explanation li {
-    margin: 0.5rem 0;
+  margin: 0.5rem 0;
 }
 
 .explanation p {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 #version-explanation {
-    display: none;
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
-    #table-container {
-        max-width: 100%;
-        overflow-x: auto;
-        padding: 10px;
-    }
-    
-    table {
-        font-size: 14px;
-        width: 100%;
-        min-width: 500px; /* Ensures table doesn't get too small */
-    }
-    
-    .explanation {
-        padding: 15px;
-        margin: 10px;
-    }
+  #table-container {
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 10px;
+  }
+
+  table {
+    font-size: 14px;
+    width: 100%;
+    min-width: 500px; /* Ensures table doesn't get too small */
+  }
+
+  .explanation {
+    padding: 15px;
+    margin: 10px;
+  }
 }

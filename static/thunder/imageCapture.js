@@ -1,36 +1,38 @@
-const puppeteer = require('puppeteer');
-const fs = require('fs').promises;
-const path = require('path');
+const puppeteer = require("puppeteer");
+const path = require("path");
 
 async function captureTable() {
-    const browser = await puppeteer.launch({
-        headless: "new",
-        args: ['--no-sandbox']
-    });
-    const page = await browser.newPage();
-    
-    // Set viewport size
-    await page.setViewport({ width: 650, height: 450 });
-    
-    // Navigate to page
-    await page.goto('https://thebossmagnus.github.io/thunder/supported-versions.html?embed');
-    
-    // Wait for table to load
-    await page.waitForSelector('.table-style');
-    
-    // Set dark background
-    await page.evaluate(() => {
-        document.getElementById('table-container').style.backgroundColor = '#26292f';
-    });
-    
-    // Capture table
-    const element = await page.$('#table-container');
-    await element.screenshot({
-        path: path.join(__dirname, '../../assets/table.png'),
-        omitBackground: false
-    });
+  const browser = await puppeteer.launch({
+    headless: "new",
+    args: ["--no-sandbox"],
+  });
+  const page = await browser.newPage();
 
-    await browser.close();
+  // Set viewport size
+  await page.setViewport({ width: 650, height: 450 });
+
+  // Navigate to page
+  await page.goto(
+    "https://thebossmagnus.github.io/thunder/supported-versions.html?embed",
+  );
+
+  // Wait for table to load
+  await page.waitForSelector(".table-style");
+
+  // Set dark background
+  await page.evaluate(() => {
+    document.getElementById("table-container").style.backgroundColor =
+      "#27292e";
+  });
+
+  // Capture table
+  const element = await page.$("#table-container");
+  await element.screenshot({
+    path: path.join(__dirname, "../../assets/table.png"),
+    omitBackground: false,
+  });
+
+  await browser.close();
 }
 
 captureTable().catch(console.error);
