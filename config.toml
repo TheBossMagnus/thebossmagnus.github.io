@@ -1,7 +1,7 @@
 baseurl = "http://thebossmagnus.github.io"
 title = "TheBossMagnus"
 theme = "hugo-coder"
-languagecode = "en"
+locale = "en"
 defaultcontentlanguage = "en"
 
 [caches]
