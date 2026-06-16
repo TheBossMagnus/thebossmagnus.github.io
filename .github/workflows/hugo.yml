@@ -18,10 +18,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      DART_SASS_VERSION: 1.99.0
-      GO_VERSION: 1.26.1
-      HUGO_VERSION: 0.160.0
-      NODE_VERSION: 24.14.1
+      DART_SASS_VERSION: 1.100.0
+      GO_VERSION: 1.26.3
+      HUGO_VERSION: 0.163.0
+      NODE_VERSION: 24.16.0
       TZ: Europe/Oslo
     steps:
       - name: Checkout
@@ -68,7 +68,7 @@ jobs:
           [[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true
       - name: Configure Git
         run: |
-          git config core.quotepath false
+          git config --global core.quotepath false
       - name: Cache restore
         id: cache-restore
         uses: actions/cache/restore@v5
@@ -91,7 +91,7 @@ jobs:
           path: ${{ runner.temp }}/hugo_cache
           key: ${{ steps.cache-restore.outputs.cache-primary-key }}
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: ./public
   deploy:
