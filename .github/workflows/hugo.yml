@@ -1,4 +1,13 @@
 name: Build and deploy
+env:
+  # Define tool versions
+  DART_SASS_VERSION: 1.105.0
+  GO_VERSION: 1.27.1
+  HUGO_VERSION: 0.167.0
+  NODE_VERSION: 24.21.0
+
+  # Set the build time zone
+  TZ: Europe/Oslo
 on:
   push:
     branches:
@@ -17,15 +26,6 @@ defaults:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      # Define tool versions
-      DART_SASS_VERSION: 1.101.0
-      GO_VERSION: 1.26.4
-      HUGO_VERSION: 0.164.0
-      NODE_VERSION: 24.18.0
-
-      # Set the build time zone
-      TZ: Europe/Oslo
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -44,14 +44,14 @@ jobs:
 
       - name: Install Go
         if: hashFiles('go.mod') != ''
-        uses: actions/setup-go@v6
+        uses: actions/setup-go@v7
         with:
           go-version: ${{ env.GO_VERSION }}
           cache: false
 
       - name: Install Node.js
         if: hashFiles('package-lock.json') != ''
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: ${{ env.NODE_VERSION }}
 
